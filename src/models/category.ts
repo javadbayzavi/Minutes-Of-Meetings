@@ -1,14 +1,15 @@
+import { basemodel } from "src/lib/core/models/basemodel";
+
 /*
 * This model define the classification of minutes of meeting
 */
-export class category
+export class category extends basemodel
 {
-    id: string;
     title: string;
 
-    constructor(public idd: string, public ttl: string)
+    constructor(cat: any)
     {
-        this.id = idd;
-        this.title = ttl;
+        super(cat && cat.id || 0);
+        this.title = cat && cat.title || "";
     }
 }
