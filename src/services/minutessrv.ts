@@ -6,7 +6,7 @@ export class minutesservice implements service<minutes>
     Delete(model: minutes): boolean {
         throw new Error("Method not implemented.");
     }
-    Inseert(model: minutes): boolean {
+    Insert(model: minutes): boolean {
         throw new Error("Method not implemented.");
     }
     Update(model: minutes): boolean {

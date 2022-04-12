@@ -6,7 +6,7 @@ export class roleservice implements service<roles>
     Delete(model: roles): boolean {
         throw new Error("Method not implemented.");
     }
-    Inseert(model: roles): boolean {
+    Insert(model: roles): boolean {
         throw new Error("Method not implemented.");
     }
     Update(model: roles): boolean {

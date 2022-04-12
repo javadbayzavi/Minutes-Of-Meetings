@@ -6,7 +6,7 @@ export class userservice implements service<user>
     Delete(model: user): boolean {
         throw new Error("Method not implemented.");
     }
-    Inseert(model: user): boolean {
+    Insert(model: user): boolean {
         throw new Error("Method not implemented.");
     }
     Update(model: user): boolean {

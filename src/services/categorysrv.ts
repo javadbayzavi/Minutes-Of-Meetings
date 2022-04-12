@@ -6,7 +6,7 @@ export class categoryservice implements service<category>
     Delete(model: category): boolean {
         return true;
     }
-    Inseert(model: category): boolean {
+    Insert(model: category): boolean {
         throw new Error("Method not implemented.");
     }
     Update(model: category): boolean {

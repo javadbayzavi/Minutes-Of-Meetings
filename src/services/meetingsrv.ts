@@ -6,7 +6,7 @@ export class meetingservice implements service<meetings>
     Delete(model: meetings): boolean {
         return true;
     }
-    Inseert(model: meetings): boolean {
+    Insert(model: meetings): boolean {
         return true;
     }
     Update(model: meetings): boolean {

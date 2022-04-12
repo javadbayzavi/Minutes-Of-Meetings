@@ -3,10 +3,10 @@ import { attendances } from "src/models/attendances";
 
 export class attendanceservice implements service<attendances>
 {
-    Delete(model: attendances): boolean {
+    Insert(model: attendances): boolean {
         throw new Error("Method not implemented.");
     }
-    Inseert(model: attendances): boolean {
+    Delete(model: attendances): boolean {
         throw new Error("Method not implemented.");
     }
     Update(model: attendances): boolean {
