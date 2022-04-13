@@ -1,10 +1,10 @@
 import { basemodel } from "../models/basemodel";
-import { service } from "../services/service";
+import { iservice } from "../services/iservice";
 
 export class component
 {
-    serviceProvider: service<basemodel>;
-    constructor(serviceModel: service<basemodel>)
+    serviceProvider: iservice<basemodel>;
+    constructor(serviceModel: iservice<basemodel>)
     {
         this.serviceProvider = serviceModel;
     }

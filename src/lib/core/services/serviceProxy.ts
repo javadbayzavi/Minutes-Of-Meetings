@@ -2,7 +2,7 @@ import { Type } from "@angular/core";
 import { basemodel } from "../models/basemodel";
 import { service } from "./service";
 
-export class serviceProxy<Type> implements iserviceproxy<Type
+export class serviceProxy<Type> implements iserviceproxy<Type>
 {
     service: service<Type>
     constructor(servi: service<Type>)
@@ -64,26 +64,31 @@ export class serviceProxy<Type> implements iserviceproxy<Type
         //TODO: real get operation for model
 
         this.service.AfterGet();
-        return ;
+        return this.service.servicemodel;
         }
         catch
         {
-            return false
+        }
+        finally
+        {
+            return this.service.servicemodel;
         }
     }
     doGets(model: Type): Type[] {
         try
         {
-        this.service.PrepareForGets();
+        //this.service.PrepareForGets();
 
         //TODO: real gets operation for model
 
-        this.service.AfterGets();
-        return ;
+        //this.service.AfterGets();
         }
         catch
         {
-            return false
         }    
+        finally
+        {
+            return this.service.servicemodels;
+        }
     }
 }
