@@ -41,7 +41,6 @@ export class attendancesrvimpl implements attendanceservice{
     AfterGet(): void {
         throw new Error("Method not implemented.");
     }
-    executor: serviceProxy<attendances>;
     servicemodel: attendances;
     servicemodels: attendances[];
 }

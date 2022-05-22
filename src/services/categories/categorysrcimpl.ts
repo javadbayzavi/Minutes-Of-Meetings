@@ -26,7 +26,6 @@ export class categorysrvimpl implements categoryservice{
     AfterGet(): void {
         throw new Error("Method not implemented.");
     }
-    executor: serviceProxy<category>;
     servicemodel: category;
     servicemodels: category[];
     Delete(model: category): boolean {

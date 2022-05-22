@@ -1,8 +1,7 @@
 import { service } from "src/lib/core/services/service";
-import { serviceProxy } from "src/lib/core/services/serviceProxy";
-import { minutes } from "src/models/minutes";
+import { meetings } from "src/models/meetings";
 
-export class minutesservice implements service<minutes>
+export class meetingservice implements service<meetings>
 {
     PrepareForDelete(): void {
         throw new Error("Method not implemented.");
@@ -28,23 +27,23 @@ export class minutesservice implements service<minutes>
     AfterGet(): void {
         throw new Error("Method not implemented.");
     }
-    executor: serviceProxy<minutes>;
-    servicemodel: minutes;
-    servicemodels: minutes[];
-    Delete(model: minutes): boolean {
+    servicemodel: meetings;
+    servicemodels: meetings[];
+    Delete(model: meetings): boolean {
         throw new Error("Method not implemented.");
     }
-    Insert(model: minutes): boolean {
+    Insert(model: meetings): boolean {
         throw new Error("Method not implemented.");
     }
-    Update(model: minutes): boolean {
+    Update(model: meetings): boolean {
         throw new Error("Method not implemented.");
     }
-    Get(model: minutes): minutes {
+    Get(model: meetings): meetings {
         throw new Error("Method not implemented.");
     }
-    Gets(model: minutes): minutes[] {
+    Gets(model: meetings): meetings[] {
         throw new Error("Method not implemented.");
     }
 
+    
 }

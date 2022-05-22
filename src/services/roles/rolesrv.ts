@@ -1,5 +1,4 @@
 import { service } from "src/lib/core/services/service";
-import { serviceProxy } from "src/lib/core/services/serviceProxy";
 import { roles } from "src/models/roles";
 
 export class roleservice implements service<roles>
@@ -28,7 +27,6 @@ export class roleservice implements service<roles>
     AfterGet(): void {
         throw new Error("Method not implemented.");
     }
-    executor: serviceProxy<roles>;
     servicemodel: roles;
     servicemodels: roles[];
     Delete(model: roles): boolean {

@@ -1,5 +1,4 @@
 import { iservice } from "./iservice";
-import { serviceProxy } from "./serviceProxy";
 
 export class service<Type> implements iservice<Type>
 {
@@ -12,14 +11,16 @@ export class service<Type> implements iservice<Type>
     AfterUpdate(): void {}
     AfterGet(): void {}
 
-    executor: serviceProxy<Type>;
+    // executor: serviceProxy<Type>;
     servicemodel: Type;
     servicemodels: Type[];
 
     constructor()
     {
-        this.executor = new serviceProxy<Type>(this);
+        // this.executor = new serviceProxy<Type>(this);
+        this.servicemodels = [];
     }
+
     Delete(model: Type): boolean {
         try
         {
@@ -66,6 +67,7 @@ export class service<Type> implements iservice<Type>
             return false
         }
     }
+
     Get(model: Type) {
         try
         {
