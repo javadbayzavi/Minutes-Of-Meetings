@@ -1,9 +1,22 @@
-import { service } from "src/lib/core/services/service";
-import { serviceProxy } from "src/lib/core/services/serviceProxy";
 import { attendances } from "src/models/attendances";
+import { attendanceservice } from "./attendancesrv";
 
-export class attendanceservice implements service<attendances>
-{
+export class attendancesrvimpl implements attendanceservice{
+    Delete(model: attendances): boolean {
+        throw new Error("Method not implemented.");
+    }
+    Insert(model: attendances): boolean {
+        throw new Error("Method not implemented.");
+    }
+    Update(model: attendances): boolean {
+        throw new Error("Method not implemented.");
+    }
+    Get(model: attendances): attendances {
+        throw new Error("Method not implemented.");
+    }
+    Gets(model: attendances): attendances[] {
+        throw new Error("Method not implemented.");
+    }
     PrepareForDelete(): void {
         throw new Error("Method not implemented.");
     }
@@ -31,5 +44,4 @@ export class attendanceservice implements service<attendances>
     executor: serviceProxy<attendances>;
     servicemodel: attendances;
     servicemodels: attendances[];
-
 }

@@ -1,4 +1,3 @@
-import { Type } from "@angular/core";
 import { basemodel } from "../models/basemodel";
 import { service } from "./service";
 
@@ -13,12 +12,12 @@ export class serviceProxy<Type> implements iserviceproxy<Type>
     doInsert(model: Type): boolean {
         try
         {
-        this.service.PrepareForInsert();
+            this.service.PrepareForInsert();
 
-        //TODO: real insert operation for model
+            //TODO: real insert operation for model
 
-        this.service.AfterInsert();
-        return true;
+            this.service.AfterInsert();
+            return true;
         }
         catch
         {
@@ -26,15 +25,15 @@ export class serviceProxy<Type> implements iserviceproxy<Type>
         }
     }
 
-    doUpdate(mode: Type): boolean {
+    doUpdate(model: Type): boolean {
         try
         {
-        this.service.PrepareForUpdate();
+            this.service.PrepareForUpdate();
 
-        //TODO: real update operation for model
+            //TODO: real update operation for model
 
-        this.service.AfterUpdate();
-        return true;
+            this.service.AfterUpdate();
+            return true;
         }
         catch
         {
@@ -44,12 +43,12 @@ export class serviceProxy<Type> implements iserviceproxy<Type>
     doDelete(model: Type): boolean {
         try
         {
-        this.service.PrepareForDelete();
+            this.service.PrepareForDelete();
 
-        //TODO: real delete operation for model
+            //TODO: real delete operation for model
 
-        this.service.AfterDelete();
-        return true;
+            this.service.AfterDelete();
+            return true;
         }
         catch
         {
@@ -59,12 +58,12 @@ export class serviceProxy<Type> implements iserviceproxy<Type>
     doGet(model: Type): Type {
         try
         {
-        this.service.PrepareForGet();
+            this.service.PrepareForGet();
 
-        //TODO: real get operation for model
+            //TODO: real get operation for model
 
-        this.service.AfterGet();
-        return this.service.servicemodel;
+            this.service.AfterGet();
+            return this.service.servicemodel;
         }
         catch
         {
@@ -77,11 +76,11 @@ export class serviceProxy<Type> implements iserviceproxy<Type>
     doGets(model: Type): Type[] {
         try
         {
-        //this.service.PrepareForGets();
+            //this.service.PrepareForGets();
 
-        //TODO: real gets operation for model
+            //TODO: real gets operation for model
 
-        //this.service.AfterGets();
+            //this.service.AfterGets();
         }
         catch
         {

@@ -1,9 +1,7 @@
-import { service } from "src/lib/core/services/service";
-import { serviceProxy } from "src/lib/core/services/serviceProxy";
-import { user } from "src/models/user";
+import { category } from "src/models/category";
+import { categoryservice } from "./categorysrv";
 
-export class userservice implements service<user>
-{
+export class categorysrvimpl implements categoryservice{
     PrepareForDelete(): void {
         throw new Error("Method not implemented.");
     }
@@ -28,23 +26,23 @@ export class userservice implements service<user>
     AfterGet(): void {
         throw new Error("Method not implemented.");
     }
-    executor: serviceProxy<user>;
-    servicemodel: user;
-    servicemodels: user[];
-    Delete(model: user): boolean {
+    executor: serviceProxy<category>;
+    servicemodel: category;
+    servicemodels: category[];
+    Delete(model: category): boolean {
         throw new Error("Method not implemented.");
     }
-    Insert(model: user): boolean {
+    Insert(model: category): boolean {
         throw new Error("Method not implemented.");
     }
-    Update(model: user): boolean {
+    Update(model: category): boolean {
         throw new Error("Method not implemented.");
     }
-    Get(model: user): user {
+    Get(model: category): category {
         throw new Error("Method not implemented.");
     }
-    Gets(model: user): user[] {
+    Gets(model: category): category[] {
         throw new Error("Method not implemented.");
     }
-  
+
 }
